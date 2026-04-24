@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+section {
+    background-color: #3eb6bd;
+}
+
+h1 {
+    color: #fff;
+}
+
+em {
+    font-weight: bold;
+}
+
+.maxwidth {
+    width: 300px;
+    max-width: 100%;
+}
+
+.object-fit {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center center;
+    object-position: left top;
+    object-position: right bottom;
+    object-position: 20% 15%;
+}
