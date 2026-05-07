@@ -19,7 +19,7 @@
         <img src="img/odaiba.jpg" alt="お台場の夜景" class="maxwidth">
     </div>
 
-    <div>
+    <div id="picture">
         <picture>
             <source srcset="img/odaiba.webp" media="(min-width: 900px)">
             <source srcset="img/odaiba-resize.webp" media="(min-width: 300px)">
@@ -29,6 +29,20 @@
 
     <div>
         <img src="img/odaiba.jpg" alt="" class="object-fit">
+    </div>
+
+    <div class="media-mobile">
+        <p>960px以上の時にスタイルが変更される</p>
+    </div>
+
+    <div class="media-desktop">
+        <p>500px以下の時にスタイルが変更される</p>
+    </div>
+
+    <div>
+        <a href="#picture" class="text-link">テキストリンク</a>
+        <a href="https://books.mdn.co.jp" class="button-link" target="_blank">ボタンリンク</a>
+        <a href="#" class="button-link2">ボタンリンク2</a>
     </div>
 
 </body>

@@ -26,3 +26,25 @@ em {
     object-position: right bottom;
     object-position: 20% 15%;
 }
+
+.media-mobile {
+    background-color: red;
+}
+
+@media screen and (min-width:960px) {
+    .media-mobile {
+        background-color: skyblue;
+    }
+}
+
+.media-desktop {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .media-desktop {
+        font-size: 20px;
+    }
+}
+
+a {}
