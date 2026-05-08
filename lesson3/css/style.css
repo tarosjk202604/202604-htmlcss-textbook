@@ -104,3 +104,20 @@ ul li::before {
     margin-right: 4px;
     vertical-align: middle;
 }
+
+ol {
+    border: 10px solid #ffc43d;
+    padding: 20px 40px 20px;
+}
+
+ol li {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background: url(../img/arrow.png) no-repeat left bottom;
+}
+
+ol li:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background: transparent;
+}
