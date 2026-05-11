@@ -48,4 +48,8 @@
     /* 90deg = to right */
 }
 
-.fixed {}
+.fixed {
+    height: 300px;
+    background: url(https://picsum.photos/1600/900) no-repeat center center;
+    background-attachment: fixed;
+}
