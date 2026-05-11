@@ -53,3 +53,41 @@
     background: url(https://picsum.photos/1600/900) no-repeat center center;
     background-attachment: fixed;
 }
+
+section {
+    width: 200px;
+    background: gold;
+    margin-bottom: 150px;
+}
+
+section img {
+    width: 100%;
+}
+
+.relative img {
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+
+.absolute {
+    position: relative;
+}
+
+.absolute img {
+    position: absolute;
+    top: 60px;
+    left: 100px;
+}
+
+.p-fixed img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+}
+
+.sticky img {
+    position: sticky;
+    top: 50px;
+}
