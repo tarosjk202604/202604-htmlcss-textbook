@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+.bg-hero {
+    /*
+    background-sizeをまとめる場合
+    背景画像の位置 / 背景サイズ
+    */
+    background: url(../img/bg-hero-sp.jpg) center bottom / cover no-repeat;
+    background-size: cover;
+    /* vh = view height(ビューポートの高さに対する相対値) */
+    height: 80vh;
+}
+
+.bg-info {
+    padding: 20% 7% 0;
+    color: #fff;
+}
