@@ -11,11 +11,11 @@
 <body>
 
     <div class="gnav-wrap">
-        <nav class="gnav-inner">
+        <nav class="gnav-inner" id="js-gnav">
             <!-- p.gnav-logo+ul.gnav-list -->
             <p class="gnav-logo">Logo</p>
-            <button class="gnav-button" type="button"><span>メニュー</span></button>
-            <ul class="gnav-list">
+            <button class="gnav-button" type="button" id="js-gnav-button"><span>メニュー</span></button>
+            <ul class="gnav-list" id="js-gnav-list">
                 <!-- li*4>a>span -->
                 <!-- (li>a>span)*4 -->
                 <li><a href="#">TOP<span>トップ</span></a></li>
@@ -27,6 +27,9 @@
         </nav>
     </div>
 
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="js/4-05-8.js"></script>
 </body>
 
 </html>

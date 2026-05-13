@@ -4,6 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* レイアウトのデバッグ */
+    /* outline: 5px solid orange; */
 }
 
 .gnav-wrap {
@@ -27,7 +29,37 @@
 
 .gnav-button {
     display: none;
+    height: 50px;
+    width: 60px;
+    background-color: transparent;
+    /* background: yellow; */
+    border: none;
+    position: relative;
 }
+
+.gnav-button span {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    background: red;
+    width: 60px;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: #fff;
+}
+
+.gnav-button::before,
+.gnav-button::after,
+.gnav-button span::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
 
 .gnav-list {
     text-align: center;
@@ -55,4 +87,28 @@
 .gnav-list li span {
     font-size: 12px;
     display: block;
+}
+
+@media screen and (max-width:800px) {
+    .gnav-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .gnav-list {
+        position: fixed;
+        padding-top: 10vh;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        width: 100%;
+        max-width: 240px;
+        height: 100vh;
+        flex-direction: column;
+        transition: 0.3s;
+    }
+
+    .is-open .gnav-list {
+        left: 0;
+    }
 }
