@@ -1,0 +1,47 @@
+@charset 'utf-8';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 100%;
+    padding: 1em;
+    background: #eee;
+}
+
+p {
+    width: 200px;
+    height: 200px;
+    background: #ff0;
+    color: #ef476f;
+}
+
+span {
+    font-size: 20px;
+}
+
+img,
+span {
+    vertical-align: middle;
+}
+
+.flex p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.position {
+    position: relative;
+    height: 300px;
+}
+
+.position p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
