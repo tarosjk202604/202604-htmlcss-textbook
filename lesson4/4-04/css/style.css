@@ -32,7 +32,7 @@
     height: 50px;
     width: 60px;
     background-color: transparent;
-    /* background: yellow; */
+    /* background: orange; */
     border: none;
     position: relative;
 }
@@ -41,7 +41,7 @@
     position: absolute;
     top: 30px;
     left: 50%;
-    background: red;
+    /* background: red; */
     width: 60px;
     transform: translateX(-50%);
     font-weight: bold;
@@ -54,10 +54,41 @@
     content: '';
     position: absolute;
     left: 50%;
+    transform: translateX(-50%);
     width: 28px;
     height: 2px;
     background-color: #fff;
-    transform: translateX(-50%);
+    transition: all 0.3s;
+}
+
+.gnav-button::before {
+    top: 8px;
+}
+
+.gnav-button::after {
+    top: 24px;
+}
+
+.gnav-button span::before {
+    top: -14px;
+}
+
+.is-open .gnav-button::before {
+    /* transform: translateX(-50%) rotate(45deg); */
+    transform: rotate(45deg);
+    top: 16px;
+    left: 16px;
+}
+
+.is-open .gnav-button::after {
+    /* transform: translateX(-50%) rotate(45deg); */
+    transform: rotate(-45deg);
+    top: 16px;
+    left: 16px;
+}
+
+.is-open .gnav-button span::before {
+    background-color: transparent;
 }
 
 
