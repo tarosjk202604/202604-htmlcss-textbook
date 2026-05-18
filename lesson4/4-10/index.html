@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-10</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <ul class="container">
+        <!-- li.item*6>img[src=img/$.png alt=$] -->
+        <li class="item"><img src="img/1.png" alt="1"></li>
+        <li class="item"><img src="img/2.png" alt="2"></li>
+        <li class="item"><img src="img/3.png" alt="3"></li>
+        <li class="item"><img src="img/4.png" alt="4"></li>
+        <li class="item"><img src="img/5.png" alt="5"></li>
+        <li class="item"><img src="img/6.png" alt="6"></li>
+    </ul>
+
+    <section>
+        <h2>justify-content / align-content / place-content - グリッド全体のレイアウト</h2>
+        <div class="grid grid-content">
+            <!-- .grid-item{$}*6 -->
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>justify-items / align-items / place-items - グリッドセル内のレイアウト, justify-self / align-self - 子要素の個別レイアウト</h2>
+        <div class="grid grid-items">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>grid-auto-flow - コンテンツの流れ</h2>
+        <div class="grid grid-auto-flow">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>grid-column / grid-row / grid-area - コンテンツの配置</h2>
+        <div class="grid grid-placement">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>グリッド線の名前</h2>
+        <div class="grid grid-line-name">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>grid-template-areas - セルに名前を付ける</h2>
+        <div class="grid grid-template-areas">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>auto-fill - 自動的にセルの数を調整する</h2>
+        <div class="grid grid-auto-fill">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>auto-fit - 自動的にセルの幅を調整する</h2>
+        <div class="grid grid-auto-fit">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>subgrid - サブグリッド</h2>
+        <div class="grid grid-subgrid">
+            <div class="grid-item">
+                <div class="icon"><i class="ri-arrow-right-circle-fill"></i></div>
+                <div class="title">タイトル</div>
+                <div class="text">テキスト</div>
+                <div class="button">
+                    <button>more</button>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="icon"><i class="ri-arrow-right-circle-fill"></i></div>
+                <div class="title">タイトルタイトルタイトルタイトル</div>
+                <div class="text">テキストテキストテキストテキストテキストテキストテキスト</div>
+                <div class="button">
+                    <button>more</button>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="icon"><i class="ri-arrow-right-circle-fill"></i></div>
+                <div class="title">タイトルタイトルタイトル</div>
+                <div class="text">テキストテキストテキストテキスト</div>
+                <div class="button">
+                    <button>more</button>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="icon"><i class="ri-arrow-right-circle-fill"></i></div>
+                <div class="title">タイトルタイトル</div>
+                <div class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+                <div class="button">
+                    <button>more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
