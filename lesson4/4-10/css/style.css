@@ -192,6 +192,7 @@ section {
 
 /* subgrid */
 .grid-subgrid {
+    padding-inline: 40px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     /* grid-template-rows: repeat(4, auto); */
