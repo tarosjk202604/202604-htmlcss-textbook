@@ -70,9 +70,10 @@ textarea {
 
 input[type=radio] {
     accent-color: #1b9aaa;
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     vertical-align: middle;
+    margin-right: 4px;
 }
 
 input[type=radio]:checked {
@@ -92,10 +93,44 @@ textarea {
     color: #666;
 }
 
+input:focus-visible {
+    outline: 3px solid orange;
+}
+
 dt::before {
     content: '◆';
     color: #1b9aaa;
     padding-right: 6px;
+}
+
+select {
+    height: 2em;
+}
+
+.label-radio {
+    display: inline-block;
+    margin-right: 2em;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input[type=submit] {
+    background: #1b9aaa;
+    width: 200px;
+    padding: 0.5em;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* PCのみ */
+@media screen and (min-width:769px) {
+    input[type=submit]:hover {
+        background: #147581;
+    }
 }
 
 /* モバイル用CSS */
@@ -117,5 +152,13 @@ dt::before {
         /* どちらでも見た目は同じ */
         width: 100%;
         width: auto;
+    }
+
+    dt {
+        margin-bottom: 10px;
+    }
+
+    input[type=submit] {
+        padding: 1em;
     }
 }
