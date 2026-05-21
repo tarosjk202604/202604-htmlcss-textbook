@@ -176,7 +176,7 @@ img {
     height: 100%;
     object-fit: cover;
 
-    animation: anime 20s infinite;
+    animation: anime 20s infinite both;
 }
 
 .box img:nth-of-type(2) {
