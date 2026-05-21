@@ -54,3 +54,57 @@ div {
     scale: 1.5;
     background: yellow;
 }
+
+@keyframes zigzag {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(50px, 100px);
+    }
+
+    100% {
+        transform: translate(100px, 0);
+    }
+}
+
+.sample1 {
+    animation: zigzag 2s ease 0s 3 normal;
+    animation-name: zigzag;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+    /* ---- */
+    animation-play-state: running;
+    animation-fill-mode: none;
+}
+
+
+@keyframes scale-and-color {
+    0% {
+        background: #ad4444;
+        transform: scale(1);
+    }
+
+    50% {
+        background: #3946ad;
+        transform: scale(1.5);
+    }
+
+    100% {
+        background: #4dad48;
+        transform: scale(1);
+    }
+}
+
+.sample2 {
+    animation: scale-and-color 4s linear 0s infinite alternate;
+    /* 繰り返し */
+    animation-iteration-count: infinite;
+    /* 再生方向 - 再生・逆再生 */
+    /* reverse(逆再生), alternate-reverse(逆の再生・逆再生) */
+    animation-direction: alternate;
+}
