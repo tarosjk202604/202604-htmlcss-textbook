@@ -1,0 +1,156 @@
+@charset 'utf-8';
+
+/* 全体スタイルの調整 */
+* {
+    box-sizing: border-box;
+    /* スムーススクロール用 */
+    scroll-behavior: smooth;
+}
+
+/* bodyの初期スタイル */
+body {
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
+    /* normal = 400 */
+    font-weight: 400;
+    color: #333;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    letter-spacing: .2em;
+    text-align: center;
+}
+
+h3 {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    color: #efefef;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:focus-visible {
+    color: #fff;
+    text-decoration: underline;
+}
+
+ul {
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* 共通スタイル(コンポーネント) */
+/* セクション見出し */
+.h2-title {
+    position: relative;
+    text-transform: uppercase;
+    z-index: 100;
+}
+
+.h2-title::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #a5d1ff;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+/* ボタン */
+.btn {
+    display: block;
+    padding: 20px 35px;
+    border-radius: 8px;
+    margin: 0 auto;
+    border: none;
+    /* aタグにも対応させる場合 */
+    width: fit-content;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:focus-visible {
+    background: rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+
+.btn-reserve {
+    color: #fff;
+    background: rgba(0, 0, 0, .9);
+    background: rgba(0 0 0 / .9);
+}
+
+/* ユーティリティスタイル */
+/* テキスト関連 */
+.txt-center {
+    text-align: center !important;
+}
+
+.txt-lead {
+    font-weight: 700 !important;
+}
+
+/* レイアウトスタイル */
+.inner {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .inner {
+        max-width: 1200px;
+    }
+}
+
+.sp-only {
+    display: block;
+}
+
+.pc-only {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .sp-only {
+        display: none;
+    }
+
+    .pc-only {
+        display: block;
+    }
+}
